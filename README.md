@@ -6,4 +6,4 @@ ALS instead BP on mnist. The architecture is three layer neural network with rel
 
 # Matrix completion
 mc function refers https://www.mathworks.com/matlabcentral/fileexchange/26395-matrix-completion-via-thresholding
-several toolboxes should be downloaded and set first
+several toolboxes should be downloaded and set first, refer to the procedure of "demo" from the link.
