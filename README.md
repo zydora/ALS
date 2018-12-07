@@ -1,5 +1,5 @@
 # ALS
-ALS update-method on mnist.
+ALS instead BP on mnist. The architecture is three layer neural network with relu or sigmoid activate function.
 
 # dataset
 "dataset" file should be unzipped before testing
