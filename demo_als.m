@@ -57,8 +57,8 @@ while (1 )
         W{i} = Z{i}/A{i};
         if i ~=3
             if index == 1
-                %temp = min(0,max(1,A{i+1}(2:end,:)));
-                temp = A{i+1}(2:end,:);
+                temp = max(0.01,min(0.99,A{i+1}(2:end,:)));
+                %temp = A{i+1}(2:end,:);
                 temp = MC(temp,mc);
                 Z{i} = log(temp./(1-temp));   
             elseif index == 2
