@@ -16,5 +16,4 @@ for i = 1:3
     end
 end
 [~,Index] = max(A{4});
-accuracy = 1-size(find(Index'-TestLabels-1)~=0,1)/size(TestLabels,2);
-end
+accuracy = 1-size(find(Index'-TestLabels-1)~=0,1)/size(TestLabels,1);
