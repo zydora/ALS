@@ -1,4 +1,4 @@
-function [W,e] = ALS_MC(W,A,Z,y,index,mc,fm,TrainImages,TrainLabels,TestImages,TestLabels,N,MAXITER)
+function [W,e] = ALS_MC(W,A,Z,y,index,mc,fm,TrainImages,TrainLabels,TestImages,TestLabels,N,MAXITER,threshold)
 %% ALS Iteration
 normt = 0;
 itr = 1;
