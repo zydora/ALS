@@ -1,4 +1,4 @@
-function [W,e] = bp_mc(W,TrainImages,y,Lrate,index,mc)
+function [W,e] = bp_mc(W,TrainImages,y,Lrate,index,mc,threshold)
 while(1)
     N = size(TrainImages,2);
     A = cell(1,4);
