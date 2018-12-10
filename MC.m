@@ -11,6 +11,8 @@ elseif mc == 2
     XRec = IHT_MC(y,M,[n1,n2]);
 elseif mc == 3
     XRec = IST_MC(y,M,[n1,n2]);
+elseif mc == 0
+    XRec = x;
 end
 fx = XRec;
 end
