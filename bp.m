@@ -1,4 +1,4 @@
-function [W,e] = bp(W,TrainImages,y,Lrate,index,TestLabels,threshold,MAXITER)
+function [W,e] = bp(W,TrainImages,y,Lrate,index,TestLabels,threshold,MAXITER,threshold)
 while (1)
     %% Main Iteration
     N = size(TrainImages,2);
