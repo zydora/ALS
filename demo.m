@@ -14,7 +14,7 @@ threshold = 1e-3;
 % activation mode
 index = 2;% case 1:sigmoid activation; case 2:relu activation
 % Matrix completion mode
-mc = 2;% case 1:NonCVX_MC % case 2:IHT_MC % case 3:IST_MC
+mc = 2;% case 1:NonCVX_MC % case 2:IHT_MC % case 3:IST_MC % case 0: non MC
 % forward update mode
 fm = 2;% case 1:update W % case 2:non update
 
