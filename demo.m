@@ -47,7 +47,7 @@ Z{3} = y;
 %% ALS
 %[W,e] = ALS(W,A,Z,y,index,mc,fm,TrainImages,TrainLabels,TestImages,TestLabels,N,MAXITER,threshold);
 %% BP
-[W,e] = bp(W,TrainImages,y,Lrate,index,TestLabels,threshold,MAXITER,threshold,batchsize);
+[W,e] = bp(W,TrainImages,y,Lrate,index,TestLabels,TestImages,threshold,MAXITER,batchsize);
 %% BP-MC
 %[W,e] = bp_mc(W,TrainImages,y,Lrate,index,mc,threshold);
 
