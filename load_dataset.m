@@ -1,5 +1,5 @@
 function [TrainImages,TestImages,TrainLabels,TestLabels] = load_dataset(Dataset)
-if strcmpi(Dataset,'MINST')
+if strcmpi(Dataset,'MNIST')
     clear all;clc
     TrainImages = loadMNISTImages('train-images-idx3-ubyte');
     TestImages = loadMNISTImages('t10k-images-idx3-ubyte');
@@ -30,7 +30,11 @@ elseif strcmpi(Dataset,'CIFAR')
         TrainImages(i*10000-9999:i*10000,:) = M(i).data;
         TrainLabels(i*10000-9999:i*10000,:) = M(i).labels;
     end
-    TrainImages = permute(TrainImages,[2,1]);
-    TrainLabels = permute(TrainLabels,[2,1]);
+    TrainImages = im2double(permute(TrainImages,[2,1]));
+    TrainLabels = (permute(TrainLabels,[2,1]));
+    TestImages = im2double(permute(N.data,[2,1]));
+    TestLabels = (permute(N.labels,[2,1]));
+elseif strcmpi(Dataset,'MSRC')
+
 end
 end
