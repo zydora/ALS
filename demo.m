@@ -1,7 +1,7 @@
 %% load dataset
 % MINST
 clear all;clc
-Dataset = 'CIFAR';%You should change the W number nodes as same.
+Dataset = 'CIFAR';%MNIST is already included in zip; SVHN should download from http://ufldl.stanford.edu/housenumbers/; CIFAR is download from web;
 [TrainImages,TestImages,TrainLabels,TestLabels] = load_dataset(Dataset);
 %% parameter
 N = size(TrainImages,2);
