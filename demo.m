@@ -1,7 +1,8 @@
 %% load dataset
 % MINST
 clear all;clc
-Dataset = 'CIFAR';%MNIST is already included in zip; SVHN should download from http://ufldl.stanford.edu/housenumbers/; CIFAR is download from web;
+Dataset = 'CIFAR';
+%MNIST is already included in zip; SVHN should download by two datasets in load_dataset; CIFAR as same;
 [TrainImages,TestImages,TrainLabels,TestLabels] = load_dataset(Dataset);
 %% parameter
 N = size(TrainImages,2);
